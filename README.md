@@ -5,6 +5,10 @@
 
 This is a Flask-based web application that allows users to upload PDF or image files and extract text from them using optical character recognition (OCR). The extracted text is then displayed on the web page.
 
+## Application URL
+
+The application is hosted at: [https://happyhappie.pythonanywhere.com/](https://happyhappie.pythonanywhere.com/)
+
 ## Installation
 
 1. Clone the repository to your local machine.
