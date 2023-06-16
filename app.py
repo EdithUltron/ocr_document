@@ -28,7 +28,7 @@ def extract_text_from_image(file):
     custom_config = r'-l eng --oem 3 --psm 6 -c tessedit_char_whitelist="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-:.$%./@& *"'
     d = pytesseract.image_to_data(img_rgb, config=custom_config, output_type=Output.DICT)
     df = pd.DataFrame(d)
-
+    df.to_csv("dataframe.csv")
     # Clean up blanks
     df1 = df[(df.conf != '-1') & (df.text != ' ') & (df.text != '')]
 
